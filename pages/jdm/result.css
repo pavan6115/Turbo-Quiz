@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f1f5f9;
+    --primary-color: rgb(242, 134, 39);
+    --secondary-color: rgb(242, 92, 5);
+    --border-color: rgb(140, 28, 3); 
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 75em;
+    height: 100vh;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+.nav__container {
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.nav__heading {
+    margin: 0rem 5rem;
+}
+
+.nav__title {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.nav__user {
+    margin-left: auto;
+    font-size: 2.2rem;
+    width: 10rem;
+    /* border: 2px solid violet; */
+}
+
+.user__icons {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon:hover {
+    color: var(--primary-color);
+}
+
+.result__heading {
+    margin: 7rem;
+    /* border: 2px solid blue; */
+   
+}
+
+.result__title {
+    text-align: center;
+    font-size: 8rem;
+}
+
+.result__subtitle{
+    text-align: center;
+    font-weight: 600;
+}
+
+.result__pass {
+    color: rgba(14, 223, 14, 0.774);
+}
+
+.result__fail {
+    color: rgba(240, 47, 47, 0.801);
+}
+
+.result__container {
+    /* border: 2px solid greenyellow; */
+    margin-top: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+
+}
+
+.result__illustration {
+    /* border: 2px solid gold; */
+    height: auto;
+    width: 200%;
+}
+
+.result__summary {
+    /* border: 2px solid rgb(66, 21, 228); */
+    width: 50rem;
+}
+
+.total__score {
+    /* border: 2px solid blue; */
+    padding: .5rem
+}
+
+.t__score__title {
+    font-size: 5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+.score__percentage {
+    color: var(--primary-color);
+    font-size: 4.8rem;
+}
+
+.t__score {
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.total__score__description {
+    /* border: 2px solid chocolate; */
+    padding: .5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.correct__ans__txt {
+    color: rgb(26, 209, 26);
+    font-size: 400;
+}
+
+.overall__result {
+    /* border: 2px solid red; */
+    margin-top: 3rem;
+    padding: .5rem
+}
+
+.overall__result__txt {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.result__btn__container {
+    display: flex;
+    gap: 8rem;
+    line-height: 6rem;
+}
+
+.result__txt {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.check__ans__btn {
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.check__ans__btn:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    box-shadow: 0px 8px 40px -5.5px #f25c057d;
+    transition: all ease-in-out 400ms;
+}
+
+.pass__fail__txt {
+    margin-left: .3rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.pass__txt {
+    color:rgb(26, 209, 26)
+}
+
+.fail__txt {
+    color:rgba(240, 47, 47, 0.801)
+}
+
+.scroll__down__icon {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.space {
+    height: 2rem;
+    width: 1rem;
+    margin-top: 3rem;
+}
+
+.answer__btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(13px);
+    transition: all ease-in-out 400ms;
+    box-shadow: 0px 20px 39px -7.5px #f25c057d;
+}
+
+.solutions {
+    /* border: 2px solid rgb(79, 226, 35); */
+    margin-top: 7rem;
+    height: 95rem;
+}
+
+.solution__title {
+    text-align: center;
+    font-size: 6.5rem;
+}
+
+.solution__list {
+    /* border: 2px solid khaki; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45rem;
+    margin: 0rem auto 0rem auto;
+}
+
+.sol {
+    padding: 2rem 0rem;
+    font-size: 2rem;
+}
+
+
+
+/* utils */
+a {
+    text-decoration: none;
+}
